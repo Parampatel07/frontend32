@@ -20,3 +20,7 @@ thead = table heading
 th = table heading 
 tbody = table body
 tfoot = table footer 
+ul = unordered list 
+ol = ordered list
+li = list item 
+a = anchor ( links )
