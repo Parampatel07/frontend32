@@ -24,3 +24,6 @@ ul = unordered list
 ol = ordered list
 li = list item 
 a = anchor ( links )
+input = for inputs 
+form = for creating forms
+label = for labeling input 
