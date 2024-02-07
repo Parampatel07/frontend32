@@ -1,0 +1,110 @@
+  @media (min-width: 1281px) {
+       p {
+            background-color: black;
+            color: white;
+       }
+       #parent_div {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+       p {
+            background-color: rgb(255, 206, 188);
+       }
+
+       #parent_div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+       }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+       p {
+            background-color: rgb(190, 190, 255);
+       }
+
+       #parent_div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+       }
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+       p {
+            background-color: rgb(201, 255, 201);
+       }
+
+       #parent_div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+       }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+       p {
+            background-color: rgb(255, 200, 200);
+       }
+
+       #parent_div {
+            display: grid;
+            grid-template-columns: 1fr;
+       }
+  }
+
+  * {
+       margin: 0px;
+       padding: 0px;
+  }
+
+  h1 {
+       margin-top: 20px;
+       margin-bottom: 20px;
+  }
+
+  p {
+       /* background-color: rgb(204, 204, 255); */
+       font-size: 1.5rem;
+       margin: 20px;
+       padding: 20px;
+       border-radius: 30px;
+  }
+
+  .logo_text
+  {
+     font-size: 2rem;
+     margin-top: 20px;
+  }
+
+  #logo_div
+  {
+     display: flex;
+     gap: 20px;
+  }
+
+  #menu
+  {
+     padding-left: 30px;
+     padding-right: 30px;
+     background-color: rgb(255, 226, 189);
+     display: flex;
+     justify-content: space-between;
+  }
+
+  #menu_links
+  {
+     margin-top: 30px;
+  }
+
+  #menu_links > a
+  {
+     margin-right: 30px;
+     font-size: 1.5rem;
+     text-decoration: none;
+  }
+
+  a:link
+  {
+     color: blue;
+  }
