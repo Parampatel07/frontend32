@@ -1,0 +1,27 @@
+* {
+     margin: 0px;
+     padding: 0px;
+}
+
+#logo_image {
+     height: 75px;
+}
+
+#menu
+{
+     color: white;
+     font-size: 1.5rem;
+     background-color: black;
+     padding-left: 30px;
+     padding-right: 30px;
+}
+
+#menu_logo
+{
+     display: flex;
+     gap: 10px;
+}
+#logo_text
+{
+     margin-top: 30px;
+}
