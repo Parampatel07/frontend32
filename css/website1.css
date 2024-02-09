@@ -3,25 +3,95 @@
      padding: 0px;
 }
 
+body {
+     background-color: #060622;
+}
+
 #logo_image {
      height: 75px;
+     /* border-radius: 75px; */
+
 }
 
-#menu
-{
-     color: white;
+#menu {
+     color: #6FA7FE;
+     padding-top: 10px;
+     padding-bottom: 10px;
      font-size: 1.5rem;
-     background-color: black;
+     background-color: #060622;
      padding-left: 30px;
      padding-right: 30px;
+     display: flex;
+     justify-content: space-between;
 }
 
-#menu_logo
-{
+#menu_logo {
      display: flex;
      gap: 10px;
 }
-#logo_text
-{
+
+#logo_text {
+     margin-top: 20px;
+     font-family: 'Protest Riot', sans-serif;
+     font-size: 2rem;
+
+}
+
+#menu_links {
      margin-top: 30px;
+}
+
+#menu_links>a:link {
+     color: #6FA7FE;
+     margin-right: 50px;
+     text-decoration: none;
+}
+
+#menu_links>a:hover {
+     padding: 15px;
+     border-radius: 30px;
+     color: #DF53C0;
+     box-shadow: #DF53C0 0px 1px 1px 0px inset, #DF53C0 0px 50px 100px -20px, #DF53C0 0px 30px 60px -30px;
+}
+
+#banner_section {
+     padding: 50px;
+     display: flex;
+     gap: 50px;
+     background-color: #027568;
+}
+
+#banner1 {
+     height: 465px;
+     width: 700px;
+}
+
+.banner2 {
+     height: 220px;
+     width: 400px;
+}
+
+#banner2_2 {
+     margin-top: 20px;
+}
+
+#about_us {
+     padding: 50px;
+     height: 1000px;
+}
+
+.aboutus_heading {
+     font-size: 6.5rem;
+     color: white;
+}
+
+#about_heading_container {
+     display: flex;
+     gap: 15px;
+     font-family: 'Protest Riot', sans-serif;
+}
+
+#head2 {
+     margin-top: 35px;
+
 }
