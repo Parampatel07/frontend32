@@ -116,7 +116,7 @@ body {
 }
 
 #popular_section {
-     height: 1000px;
+
      padding-left: 60px;
      padding-right: 120px;
      /* padding: 50px; */
@@ -156,9 +156,80 @@ body {
      border-radius: 30px;
 }
 
-.popular_images
-{
+.popular_images {
      height: 325px;
      border-radius: 25px;
      width: 250px;
+}
+
+#artist {
+     height: 1000px;
+     padding: 70px;
+}
+
+#artist_heading {
+     font-size: 3.9rem;
+     color: white;
+     font-family: 'Protest Riot', sans-serif;
+     margin-bottom: 40px;
+}
+
+.child_artist {
+     height: 350px;
+     width: 350px;
+     border-radius: 450px;
+     background-color: rgb(113, 112, 253);
+     background-color: -moz-linear-gradient(124deg, rgba(113, 112, 253, 1) 18%, rgba(45, 54, 255, 0.9429971817828694) 55%, rgba(45, 83, 255, 1) 77%);
+     background-color: -webkit-linear-gradient(124deg, rgba(113, 112, 253, 1) 18%, rgba(45, 54, 255, 0.9429971817828694) 55%, rgba(45, 83, 255, 1) 77%);
+     background-color: linear-gradient(124deg, rgba(113, 112, 253, 1) 18%, rgba(45, 54, 255, 0.9429971817828694) 55%, rgba(45, 83, 255, 1) 77%);
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7170fd", endColorstr="#2d53ff", GradientType=1);
+}
+
+#parent_artist {
+     display: flex;
+     gap: 50px;
+}
+
+#painter1 {
+     background-image: url('../images/painter1.png');
+     background-size: cover;
+}
+
+#painter2 {
+     background-image: url('../images/painter2.png');
+     background-size: contain;
+     background-repeat: no-repeat;
+}
+
+#painter3 {
+     background-image: url('../images/painter3.png');
+     background-size: contain;
+     background-repeat: no-repeat;
+}
+
+.artist_name {
+     font-family: 'Protest Riot', sans-serif;
+     margin-top: 35px;
+     font-size: 2.5rem;
+     text-transform: capitalize;
+     display: none;
+}
+
+
+#div1:hover {
+     #name1 {
+          display: block;
+     }
+}
+
+#div2:hover {
+     #name2 {
+          display: block;
+     }
+}
+
+#div3:hover {
+     #name3 {
+          display: block;
+     }
 }
