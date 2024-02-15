@@ -7,6 +7,8 @@
      <title>Virtual Art Gallery</title>
      <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link rel="stylesheet" href="website1.css">
 </head>
 
@@ -15,30 +17,31 @@
           <div id="menu_logo">
                <!-- logo  -->
                <img src="../images/logo4.jpg" id="logo_image" alt="">
-               <span id="logo_text"><i>Digital Palettes</i></span>
+               <span id="logo_text" class="animate__animated animate__backInLeft"><i>Digital Palettes</i></span>
           </div>
-          <div id="menu_links">
+          <div class="animate__animated animate__backInLeft" id="menu_links">
                <!-- links -->
-               <a href="lesson35.html">Link 1</a>
-               <a href="lesson35.html">Link 2</a>
-               <a href="lesson35.html">Link 3</a>
-               <a href="lesson35.html">Link 4</a>
+               <a href="#about_us">About us</a>
+               <a href="#popular_section">Paintings</a>
+               <a href="#artist">Artist</a>
+               <a href="#contact_heading">Contact us</a>
           </div>
      </div>
      <div id="banner_section">
           <div>
                <!-- main  -->
-               <img src="../images/banner1.avif" id="banner1" alt="">
+               <img src="../images/banner1.avif" class="animate__animated animate__backInDown" id="banner1" alt="">
           </div>
           <div>
                <!-- sub  -->
-               <img src="../images/banner2.avif" class="banner2" alt="">
-               <img src="../images/banner3.avif" id="banner2_2" class="banner2" alt="">
+               <img src="../images/banner2.avif" class="banner2 animate__animated animate__backInDown" alt="">
+               <img src="../images/banner3.avif" id="banner2_2" class="banner2 animate__animated animate__backInDown"
+                    alt="">
           </div>
      </div>
 
      <div id="about_us">
-          <div id="about_heading_container">
+          <div id="about_heading_container" data-aos="fade-up-right" data-aos-duration="3000">
                <span class="aboutus_heading">
                     About
                </span>
@@ -47,7 +50,7 @@
                     Digital Palettes
                </span>
           </div>
-          <div id="aboutus_content">
+          <div id="aboutus_content" data-aos="fade-down-left" data-aos-duration="3000">
                <div id="aboutus_text">
                     <!-- text  -->
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio omnis magnam provident
@@ -62,7 +65,7 @@
           </div>
      </div>
 
-     <div id="popular_section">
+     <div id="popular_section" data-aos="fade-right" data-aos-duration="3000">
           <h1 class="popular_heading">
                Popular Paintings
           </h1>
@@ -90,7 +93,7 @@
                Popular Artist
           </h1>
           <div id="parent_artist">
-               <div id="div1">
+               <div id="div1" data-aos="flip-left" data-aos-duration="3000">
                     <div class="child_artist" id="painter1">
                          <!-- artist 1  -->
                          <!-- <img src="../images/painter1.png" height="325px" alt=""> -->
@@ -100,7 +103,7 @@
                          jeff koons
                     </div>
                </div>
-               <div id="div2">
+               <div id="div2" data-aos="flip-up" data-aos-duration="3000">
                     <div class="child_artist" id="painter2">
                          <!-- <img src="../images/painter2.png" alt="" height="325px"> -->
                          <!-- artist 2  -->
@@ -110,7 +113,7 @@
                          Anselm kiefer
                     </div>
                </div>
-               <div id="div3">
+               <div id="div3" data-aos="flip-right" data-aos-duration="3000">
                     <div class="child_artist" id="painter3">
                          <!-- <img src="../images/painter3.png" alt="" height="325px"> -->
                          <!-- artist 3  -->
@@ -127,7 +130,7 @@
           Contact us
      </h1>
      <div id="contact_us">
-          <div>
+          <div data-aos="fade-right" data-aos-duration="3000">
                <!-- form  -->
                <div id="form">
                     <form action="">
@@ -152,7 +155,7 @@
                     </form>
                </div>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="3000">
                <!-- map -->
                <iframe width="550" height="500"
                     src="https://www.openstreetmap.org/export/embed.html?bbox=72.13080167770387%2C21.74580801138418%2C72.15266704559328%2C21.75750683966274&amp;layer=mapnik"
@@ -168,6 +171,11 @@
                     Copyright by frontend 32</a>
           </div>
      </div>
+
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+          AOS.init();
+     </script>
 </body>
 
 </html>

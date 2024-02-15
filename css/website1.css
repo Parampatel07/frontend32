@@ -42,7 +42,7 @@ body {
      margin-top: 30px;
 }
 
-#menu_links>a:link {
+#menu_links>a:link ,#menu_links>a:visited {
      color: #6FA7FE;
      margin-right: 50px;
      text-decoration: none;
