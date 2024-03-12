@@ -1,0 +1,17 @@
+     home
+     category
+     product
+     single-product ( wishlist , add to cart )
+     wishlist 
+     addToCart
+     profile
+     edit profile
+     order history
+     view single order 
+     checkout
+     login 
+     register
+     change password
+     forgot password 
+     about us 
+     contact us 
