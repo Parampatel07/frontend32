@@ -1,3 +1,5 @@
 Write a programe to findout area of cylinder 
 
 Write a programe to findout simple intreset 
+
+Write a programe to findout area of circle take input from user 
