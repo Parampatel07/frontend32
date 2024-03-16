@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <!-- 
+1] January - 31 days
+2] February - 28 days in a common year and 29 days in leap years
+3] March - 31 days
+4] April - 30 days
+5] May - 31 days
+6] June - 30 days
+7] July - 31 days
+8] August - 31 days
+9] September - 30 days
+10] October - 31 days
+11] November - 30 days
+12] December - 31 days -->
+
+     <script>
+          // Write a programe to findout how many days a given month has take month from user 
+
+          var month = parseInt(prompt("Enter value of month "));
+          console.log("The value of month is " + month);
+
+          //condition 
+          if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+               console.log("This month has 31 days ");
+          }
+          else if (month == 2) {
+               console.log("This month has 28 or 29 days ");
+          }
+          else if (month == 4 || month == 6 || month == 9 || month == 11) {
+               console.log("This month has 30 days ");
+          }
+          else {
+               console.log("Invalid month ");
+          }
+     </script>
+</body>
+
+</html>

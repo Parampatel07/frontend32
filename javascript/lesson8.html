@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+          // Write a programe to findout smallest number outof given 3 numbers without using (and or)
+
+          var number1 = parseInt(prompt("Enter value of number1 "));
+          var number2 = parseInt(prompt("Enter value of number2 "));
+          var number3 = parseInt(prompt("Enter value of number3 "));
+
+          console.log(`The value of number 1 is ${number1} number 2 is ${number2} number 3 is ${number3}`);
+
+          //condition
+          if (number1 < number2) {
+               if (number1 < number3) {
+                    console.log("Number 1 is smallest ");
+               }
+
+          }
+          else if (number2 < number3) {
+               if (number2 < number1) {
+                    console.log("Number 2 is smallest ");
+               }
+          }
+          else if (number3 < number1) {
+               if (number3 < number2) {
+                    console.log("Number 3 is smallest ");
+               }
+          }
+     </script>
+</body>
+
+</html>

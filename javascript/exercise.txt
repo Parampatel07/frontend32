@@ -3,3 +3,5 @@ Write a programe to findout area of cylinder
 Write a programe to findout simple intreset 
 
 Write a programe to findout area of circle take input from user 
+
+Write a programe to findout how many days the given month has without using ( and , or , elseif )
