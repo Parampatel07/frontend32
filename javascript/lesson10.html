@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <!-- https://i.pinimg.com/564x/43/aa/50/43aa50c918f3bd03abb71b6d4aaf93c7.jpg -->
+     <!-- https://web.colby.edu/cogblog/files/2018/04/barnum-2-580x758.png -->
+     <!-- Write a programe to findout zodiac sign of user and peform matchmaking  -->
+     <script>
+
+          var male_month = parseInt(prompt("Enter your birth male_month "));
+          var male_date = parseInt(prompt("Enter your birth male_date "));
+          var female_month = parseInt(prompt("Enter your birth female_month "));
+          var female_date = parseInt(prompt("Enter your birth female_date "));
+          var male_sign = 0;
+          var female_sign = 0;
+
+
+          if ((male_month == 3 && male_date >= 21 && male_date <= 31) || (male_month == 4 && male_date >= 1 && male_date <= 19)) {
+
+               console.log("your zodiac sign is Aries");
+               male_sign = "aries";
+
+          } else if ((male_month == 4 && male_date >= 20 && male_date <= 30) || (male_month == 5 && male_date >= 1 && male_date <= 20)) {
+
+               console.log("your zodiac sign is Taurus");
+               male_sign = "taurus";
+
+
+          } else if ((male_month == 5 && male_date >= 21 && male_date <= 31) || (male_month == 6 && male_date >= 1 && male_date <= 20)) {
+
+               console.log("your zodiac sign is Gemini");
+               male_sign = "gemini";
+
+
+          } else if ((male_month == 6 && male_date >= 21 && male_date <= 30) || (male_month == 7 && male_date >= 1 && male_date <= 22)) {
+
+               console.log("your zodiac sign is Cancer");
+               male_sign = "cancer";
+
+          } else if ((male_month == 7 && male_date >= 23 && male_date <= 31) || (male_month == 8 && male_date >= 1 && male_date <= 22)) {
+
+               console.log("your zodiac sign is Leo");
+               male_sign = "leo";
+
+
+          } else if ((male_month == 8 && male_date >= 23 && male_date <= 31) || (male_month == 9 && male_date >= 1 && male_date <= 22)) {
+
+               console.log("your zodiac sign is Virgo");
+               male_sign = "virgo";
+
+
+          } else if ((male_month == 9 && male_date >= 23 && male_date <= 30) || (male_month == 10 && male_date >= 1 && male_date <= 22)) {
+
+               console.log("your zodiac sign is Libra");
+               male_sign = "libra";
+
+
+          } else if ((male_month == 10 && male_date >= 23 && male_date <= 31) || (male_month == 11 && male_date >= 1 && male_date <= 21)) {
+
+               console.log("your zodiac sign is Scorpio");
+               male_sign = "scorpio";
+
+
+          } else if ((male_month == 11 && male_date >= 22 && male_date <= 30) || (male_month == 12 && male_date >= 1 && male_date <= 21)) {
+
+               console.log("your zodiac sign is Sagittarius");
+               male_sign = "sagittarius";
+
+
+          } else if ((male_month == 12 && male_date >= 22 && male_date <= 31) || (male_month == 1 && male_date >= 1 && male_date <= 19)) {
+
+               console.log("your zodiac sign is Capricorn");
+               male_sign = "capricorn";
+
+          } else if ((male_month == 1 && male_date >= 20 && male_date <= 31) || (male_month == 2 && male_date >= 1 && male_date <= 18)) {
+
+               console.log("your zodiac sign is Aquarius");
+               male_sign = "aquarius";
+
+          } else if ((male_month == 2 && male_date >= 19 && male_date <= 29) || (male_month == 3 && male_date >= 1 && male_date <= 20)) {
+
+               console.log("your zodiac sign is Pisces");
+               male_sign = "pisces";
+          }
+          else {
+               console.log("Invalid Input ");
+          }
+
+          if ((female_month == 3 && female_date >= 21 && female_date <= 31) || (female_month == 4 && female_date >= 1 && female_date <= 19)) {
+
+               console.log("your zodiac sign is Aries");
+               female_sign = "aries";
+
+          } else if ((female_month == 4 && female_date >= 20 && female_date <= 30) || (female_month == 5 && female_date >= 1 && female_date <= 20)) {
+
+               console.log("your zodiac sign is Taurus");
+               female_sign = "taurus";
+
+          } else if ((female_month == 5 && female_date >= 21 && female_date <= 31) || (female_month == 6 && female_date >= 1 && female_date <= 20)) {
+
+               console.log("your zodiac sign is Gemini");
+               female_sign = "gemini";
+
+          } else if ((female_month == 6 && female_date >= 21 && female_date <= 30) || (female_month == 7 && female_date >= 1 && female_date <= 22)) {
+
+               console.log("your zodiac sign is Cancer");
+               female_sign = "cancer";
+
+          } else if ((female_month == 7 && female_date >= 23 && female_date <= 31) || (female_month == 8 && female_date >= 1 && female_date <= 22)) {
+
+               console.log("your zodiac sign is Leo");
+               female_sign = "leo";
+
+          } else if ((female_month == 8 && female_date >= 23 && female_date <= 31) || (female_month == 9 && female_date >= 1 && female_date <= 22)) {
+
+               console.log("your zodiac sign is Virgo");
+               female_sign = "virgo";
+
+          } else if ((female_month == 9 && female_date >= 23 && female_date <= 30) || (female_month == 10 && female_date >= 1 && female_date <= 22)) {
+
+               console.log("your zodiac sign is Libra");
+               female_sign = "libra";
+
+          } else if ((female_month == 10 && female_date >= 23 && female_date <= 31) || (female_month == 11 && female_date >= 1 && female_date <= 21)) {
+
+               console.log("your zodiac sign is Scorpio");
+               female_sign = "scorpio";
+
+          } else if ((female_month == 11 && female_date >= 22 && female_date <= 30) || (female_month == 12 && female_date >= 1 && female_date <= 21)) {
+
+               console.log("your zodiac sign is Sagittarius");
+               female_sign = "sagittarius";
+
+          } else if ((female_month == 12 && female_date >= 22 && female_date <= 31) || (female_month == 1 && female_date >= 1 && female_date <= 19)) {
+
+               console.log("your zodiac sign is Capricorn");
+               female_sign = "capricorn";
+
+          } else if ((female_month == 1 && female_date >= 20 && female_date <= 31) || (female_month == 2 && female_date >= 1 && female_date <= 18)) {
+
+               console.log("your zodiac sign is Aquarius");
+               female_sign = "aquarius";
+
+          } else if ((female_month == 2 && female_date >= 19 && female_date <= 29) || (female_month == 3 && female_date >= 1 && female_date <= 20)) {
+
+               console.log("your zodiac sign is Pisces");
+               female_sign = "pisces";
+          }
+          else {
+               console.log("Invalid input ");
+          }
+
+     </script>
+</body>
+
+</html>
