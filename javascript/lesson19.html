@@ -43,7 +43,8 @@
                                    <div class="text-end mt-3">
                                         <input class="btn btn-success" value="Add Student" type="submit"
                                              onclick="addStudent();">
-                                        <input class="btn btn-danger" type="reset" value="Clear all">
+                                        <input class="btn btn-danger" type="reset" onclick="clearForm()"
+                                             value="Clear all">
                                    </div>
                               </div>
                          </div>
@@ -55,8 +56,20 @@
                     <div class="card my-5 shadow">
                          <div class="card-header h2 text-bg-success">View Student</div>
                          <div class="card-body">
-                              <div class="table-responsive" id="mytable">
+                              <div class="table-responsive">
+                                   <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                             <th>Sr no</th>
+                                             <th>Name</th>
+                                             <th>Age</th>
+                                             <th>Course </th>
+                                             <th>Start Date</th>
+                                             <th>Start Time</th>
+                                        </thead>
+                                        <tbody id="mytable">
 
+                                        </tbody>
+                                   </table>
                               </div>
                          </div>
                     </div>
@@ -64,12 +77,10 @@
           </div>
      </div>
      <script>
-
+          var sr_no = 1;
           function addStudent() {
-
                console.log("Add student called...");
                var name = 0, date = 0, age = 0, time = 0, course = 0;
-
                name = document.getElementById("name").value;
                date = document.getElementById("date").value;
                age = document.getElementById("age").value;
@@ -80,30 +91,31 @@
                console.log(`The value of time is ${time}`);
                console.log(`The value of age is ${age}`);
                console.log(`The value of course is ${course}`);
-               var table = ` <table class="table table-bordered table-hover table-striped">
-                                        <thead>
-                                             <th>Sr no</th>
-                                             <th>Name</th>
-                                             <th>Age</th>
-                                             <th>Course </th>
-                                             <th>Start Date</th>
-                                             <th>Start Time</th>
-                                        </thead>
-                                        <tbody>
-                                             <tr>
-                                                  <td>1</td>
+               var table = ` <tr>
+                                                  <td>${sr_no}</td>
                                                   <td>${name}</td>
                                                   <td>${age}</td>
                                                   <td>${course}</td>
                                                   <td>${date}</td>
                                                   <td>${time}</td>
                                              </tr>
-                                        </tbody>
-                                   </table>`
+                                       `
                document.getElementById('mytable').innerHTML += table;
-
+               sr_no++;
           }
 
+          function clearForm() {
+               console.log("Clear form check ");
+               let confirmation = confirm("Are you sure ! Do you really want to clear form ");
+               if (confirmation) {
+                    //clear
+                    document.getElementById("name").value = '';
+                    document.getElementById("date").value = '';
+                    document.getElementById("time").value = '';
+                    document.getElementById("course").value = '';
+                    document.getElementById("age").value = '';
+               }
+          }
      </script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
