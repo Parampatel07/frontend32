@@ -46,26 +46,19 @@
                console.log("Table check ");
                var number = document.getElementById("number").value;
                console.log("number " + number);
+               var output = ``;
                var number2 = 1;
                var answer = 1;
                for (number2 = 1; number2 <= 10; number2++) {
                     answer = number * number2;
-                    console.log(`${number} X ${number2} = ${answer}`);
+                    output += `<tr>
+                                   <td>${number} X ${number2} = ${answer}  </td>
+                              </tr> `
                     // console.log("answer " + answer);
                     // number2++;
                }
-               var table = `<tr>
-                                   <td>
-                                        Table generator
-                                   </td>
-                                  
-                              </tr>
-                              <tr id='tr'>
-                                   <td>
-                                        
-                                   </td>
-                              </tr>`;
-               document.getElementById("output").innerHTML = table;
+               console.log(output);
+               document.getElementById("output").innerHTML = output;
                // 2 
                // answer = number * number2;
                // console.log("Answer " + answer);
