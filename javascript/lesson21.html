@@ -37,43 +37,37 @@
                </div>
           </div>
           <div class="row mt-5" id="output">
-               <div class=" offset-2">
-                    <div class="col-12" >
 
-                    </div>
-               </div>
           </div>
      </div>
      <script>
           function generateTable() {
                console.log("Table check ");
-               var startnumber = document.getElementById("startnumber").value;
-               var endnumber = document.getElementById("endnumber").value;
-
+               var startnumber = parseInt(document.getElementById("startnumber").value);
+               var endnumber = parseInt(document.getElementById("endnumber").value);
                console.log(`the value of start number is ${startnumber} and endnumber is ${endnumber}`);
                var result = 1;
                var multiplier = 1;
-               var count = 1;
-
-               // for (multiplier = 1; multiplier <= 10; multiplier++) {
-               //      result = startnumber * multiplier;
-               //      console.log(`${startnumber} X ${multiplier} = ${result}`);
-               // }
                var tr = ` `;
                var table = ' ';
                for (startnumber = startnumber; startnumber <= endnumber; startnumber++) {
-                    table += `<table class="table table-bordered table-striped table-hover ">`
+                    table += `<div class='col-3'><table class="table table-bordered table-striped table-hover ">`
                     for (multiplier = 1; multiplier <= 10; multiplier++) {
                          result = startnumber * multiplier;
                          tr += `<tr><td>${startnumber} X ${multiplier} = ${result}</td></tr>`;
                          console.log(tr);
                     }
-                    table += `${tr} </table>`;
+                    table += `${tr} </table> </div>`;
                     tr = ` `;
                     // startnumber = document.getElementById('startnumber').value ; 
                     // table = ` `;
                }
                document.getElementById('output').innerHTML = table;
+
+               // for (multiplier = 1; multiplier <= 10; multiplier++) {
+               //      result = startnumber * multiplier;
+               //      console.log(`${startnumber} X ${multiplier} = ${result}`);
+               // }
                // startnumber++;
                // for (multiplier = 1; multiplier <= 10; multiplier++) {
                //      result = startnumber * multiplier;
