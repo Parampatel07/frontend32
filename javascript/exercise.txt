@@ -13,3 +13,8 @@ https://web.colby.edu/cogblog/files/2018/04/barnum-2-580x758.png
 Write a programe to findout wether the given shape is square or not using (lenght , width ) use ternary operator 
 
 Write five condition using null and undefined which evaluate false 
+
+triangle 
+https://i1.faceprep.in/fp/articles/img/46684_1580817324.png
+
+2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123 .... 3000
