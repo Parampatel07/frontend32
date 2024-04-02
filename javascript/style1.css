@@ -1,0 +1,190 @@
+.main-content {
+     margin: 5em auto;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     text-align: center;
+     text-transform: uppercase;
+}
+
+h1 {
+     width: 100%;
+     margin: 0 auto 1.5em;
+     font-size: 30px;
+
+     small {
+          text-transform: none;
+          display: block;
+          margin: 20px 0;
+          font: 300 20px 'QuickSand', sans-serif;
+          color: #999;
+     }
+}
+
+.moleskine-wrapper {
+     max-width: calc(100% / 4);
+     min-width: 10em;
+}
+
+.moleskine-notebook {
+     height: 250px;
+     width: 100%;
+     position: relative;
+     transition: .4s ease-in-out;
+     border-radius: 5px 15px 15px 5px;
+     transform-origin: left center 0px;
+     display: inline-block;
+     margin: 30px;
+     perspective: 800px;
+
+     &:hover {
+          transform: rotateZ(-10deg);
+
+          .notebook-cover {
+               transform: rotateY(-50deg);
+               z-index: 999;
+               box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.2);
+          }
+     }
+
+}
+
+.notebook-cover {
+     background: #cc4b48;
+     height: 250px;
+     width: 175px;
+     position: absolute;
+     border-radius: 5px 15px 15px 5px;
+     z-index: 10;
+     transition: .5s linear;
+     transform-style: preserve-3d;
+     transform-origin: left center 0px;
+
+     &:before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: calc(100% + 2px);
+          top: -1px;
+          z-index: 100;
+          border-radius: 2px;
+          right: 25px;
+          transition: 2s ease;
+          background: linear-gradient(to right,
+                    darken(#cc4b48, 15%) 0%,
+                    #cc4b48 12%,
+                    darken(#cc4b48, 15%) 25%,
+                    #cc4b48 37%,
+                    darken(#cc4b48, 15%) 50%,
+                    #cc4b48 62%,
+                    darken(#cc4b48, 15%) 75%,
+                    #cc4b48 87%,
+                    darken(#cc4b48, 15%) 100%);
+     }
+}
+
+.notebook-cover {
+     &.blue {
+          background: #2e95aa;
+
+          &:before {
+               background: linear-gradient(to right,
+                         darken(#2e95aa, 15%) 0%,
+                         #2e95aa 12%,
+                         darken(#2e95aa, 15%) 25%,
+                         #2e95aa 37%,
+                         darken(#2e95aa, 15%) 50%,
+                         #2e95aa 62%,
+                         darken(#2e95aa, 15%) 75%,
+                         #2e95aa 87%,
+                         darken(#2e95aa, 15%) 100%);
+          }
+     }
+
+     &.green {
+          background: #abc3b5;
+
+          &:before {
+               background: linear-gradient(to right,
+                         darken(#abc3b5, 15%) 0%,
+                         #abc3b5 12%,
+                         darken(#abc3b5, 15%) 25%,
+                         #abc3b5 37%,
+                         darken(#abc3b5, 15%) 50%,
+                         #abc3b5 62%,
+                         darken(#abc3b5, 15%) 75%,
+                         #abc3b5 87%,
+                         darken(#abc3b5, 15%) 100%);
+          }
+     }
+
+     &.yellow {
+          background: #fed754;
+
+          &:before {
+               background: linear-gradient(to right,
+                         darken(#fed754, 20%) 0%,
+                         #fed754 12%,
+                         darken(#fed754, 20%) 25%,
+                         #fed754 37%,
+                         darken(#fed754, 20%) 50%,
+                         #fed754 62%,
+                         darken(#fed754, 20%) 75%,
+                         #fed754 87%,
+                         darken(#fed754, 20%) 100%);
+          }
+     }
+}
+
+.notebook-skin {
+     height: 60px;
+     background: #e8e8e0;
+     margin-top: 80px;
+     padding: 15px;
+     font-size: 12px;
+     position: relative;
+     z-index: 10;
+     color: #222;
+     text-align: left;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+     &:before {
+          content: '';
+          /* position: absolute; */
+          width: 100%;
+          height: 15px;
+          /* left: 0; */
+          /* bottom:0; */
+          background: #cddc39;
+     }
+}
+
+.notebook-page {
+     height: 100%;
+     width: 175px;
+     position: absolute;
+     background-color: #fbfae8;
+     z-index: 0;
+     border-radius: 5px 16px 16px 5px;
+     overflow: hidden;
+
+     &.ruled {
+          background: linear-gradient(to bottom, #fbfae8 9px, #e4e4e4 1px);
+          background-size: 100% 10px;
+     }
+
+     &.squared {
+          background-image: linear-gradient(#e4e4e4 1px, transparent 1px), linear-gradient(90deg, #e4e4e4 1px, transparent 1px);
+          background-size: 10px 10px, 10px 10px, 2px 2px, 2px 2px;
+     }
+
+     &.dotted {
+          background: linear-gradient(90deg, #fbfae8 10px, transparent 1%) center, linear-gradient(#fbfae8 10px, transparent 1%) center, #999;
+          background-size: 11px 11px;
+     }
+}
+
+.book_image
+{
+     margin-top: 20px;
+}
