@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+
+     <!-- Write a programe to findout wether the user given number is perfect number or not  -->
+     <script>
+
+          var number = parseInt(prompt("Enter any number "))
+
+          // var number = 6;
+
+          var answer = 0;
+          var temp = 0;
+          var product = 0;
+          answer = number * 2; // 12
+
+          for (temp = 1; temp <= number; temp++) {
+               if (number % temp == 0) {
+                    // document.write(temp + " , ");
+                    product = product + temp;
+               }
+          }
+          // product = temp + temp + temp + temp ;
+          // document.write("<br>" + product + " , ");
+          if (product == answer) {
+               document.write(`<h1>Number is perfect number : ${number}</h1>`)
+          }
+          else {
+               document.write(`<h1>Number is not a perfect number : ${number} </h1>`)
+          }
+          // document.write("<br>" + temp + " , ");
+          // else if(number % 2 == 0)
+          // {
+          //      document.write("2");
+          // }
+          // else if(number % 3 == 0 )
+          // {
+          //      document.write("3");
+          // }
+          // else if(number % 4 == 0 )
+          // {
+          //      document.write("4");
+          // }
+     </script>
+</body>
+
+</html>

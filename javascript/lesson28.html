@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+
+     <!-- Write a programe to print following pattern  -->
+     <!-- Number hollow inverted half pyramid  -->
+     <script>
+          var count = 0;
+          var flash = 0;
+          var temp = 2;
+          for (count = 1; count < 9; count++) {
+               document.write(count);
+          }
+          for (flash = 5; flash >= 0; flash--) {
+               document.write("<br>");
+               document.write(temp);
+               temp++;
+               for (count = 0; count < flash; count++) {
+                    document.write("&nbsp;&nbsp;");
+               }
+               document.write("8");
+          }
+          document.write("<br>");
+          document.write("8");
+          // document.write("<br>");
+          // document.write("*");
+          // for (count = 0; count < 4; count++) {
+          //      document.write("&nbsp;&nbsp;");
+          // }
+          // document.write("*");
+          // document.write("<br>");
+          // document.write("*");
+          // for (count = 0; count < 3; count++) {
+          //      document.write("&nbsp;&nbsp;");
+          // }
+          // document.write("*");
+          // document.write("<br>");
+          // document.write("*");
+          // for (count = 0; count < 2; count++) {
+          //      document.write("&nbsp;&nbsp;");
+          // }
+          // document.write("*");
+          // document.write("<br>");
+          // document.write("*");
+          // document.write("&nbsp;&nbsp;");
+          // document.write("*");
+
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <!-- Write a programe to print following pattern  -->
+     <!-- 1, 6, 15, 28, 45, 66, 91, 120, 153, 190, 231 .. 10000 -->
+     <!-- 1  5  9   13  17  21-->
+     <script>
+          var number = 1;
+          var count = 0 ;
+          document.write(number);
+          
+          for( count = 5 ; number < 9730 ; count = count + 4)
+          {
+               number = number + count;
+               document.write(" , " + number);
+          }
+          // number = number + 9;
+          // document.write(" , " + number);
+          // number = number + 13;
+          // document.write(" , " + number);
+          // number = number + 17;
+          // document.write(" , " + number);
+
+     </script>
+</body>
+
+</html>
