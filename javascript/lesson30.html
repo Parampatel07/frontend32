@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+
+     <script>
+          // Write a programe to print 20 amrstrong number  
+          var number = 0;
+          var answer = 1;
+          var total = 0;
+          var count = 0;
+          var flash = 0;
+          var number_array = 0;
+          var array_length = 0;
+          // console.log(array_length);
+          // console.log(number_array);
+          number = '153';
+          number_array = number.split('');
+          array_length = number_array.length
+          do {
+               do {
+                    answer = answer * number_array[flash];
+                    count++;
+               } while (count < array_length);
+               // console.log(answer);
+               total = total + answer; // 125 + 0 
+               count = 0;
+               answer = 1;
+               flash++;
+          } while (flash < array_length);
+          // console.log(total);
+          if (total == number) {
+               console.log(number);
+          }
+          number = parseInt(number) + 1
+          number = number.toString();
+          console.log(number);
+
+          // do {
+          //      answer = answer * number_array[1];
+          //      count++;
+          // } while (count < array_length);
+          // console.log(answer);
+          // total = total + answer; // 125 + 64
+          // count = 0;
+          // answer = 1;
+
+          // do {
+          //      answer = answer * number_array[2];
+          //      count++;
+          // } while (count < array_length);
+          // console.log(answer);
+          // total = total + answer; // 189 + 512
+          // count = 0;
+          // answer = 1;
+
+          // do {
+          //      answer = answer * number_array[3];
+          //      count++;
+          // } while (count < array_length);
+          // console.log(answer);
+          // total = total + answer; // 1213
+          // count = 0;
+          // answer = 1;
+
+          // do {
+          //      answer = answer * number_array[4];
+          //      count++;
+          // } while (count < array_length);
+          // console.log(answer);
+          // total = total + answer; // 1213
+          // count = 0;
+          // answer = 1;
+
+          // do {
+          //      answer = answer * number_array[5];
+          //      count++;
+          // } while (count < array_length);
+          // console.log(answer);
+          // total = total + answer;
+
+
+     </script>
+</body>
+
+</html>
