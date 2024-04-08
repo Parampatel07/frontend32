@@ -19,29 +19,63 @@
           var flash = 0;
           var number_array = 0;
           var array_length = 0;
+          var print_count = 0;
           // console.log(array_length);
           // console.log(number_array);
-          number = '153';
-          number_array = number.split('');
-          array_length = number_array.length
+          number = '1';
           do {
+               number_array = number.split('');
+               array_length = number_array.length
+               flash = 0;
+               total = 0;
                do {
-                    answer = answer * number_array[flash];
-                    count++;
-               } while (count < array_length);
-               // console.log(answer);
-               total = total + answer; // 125 + 0 
-               count = 0;
-               answer = 1;
-               flash++;
-          } while (flash < array_length);
-          // console.log(total);
-          if (total == number) {
-               console.log(number);
-          }
-          number = parseInt(number) + 1
-          number = number.toString();
-          console.log(number);
+                    do {
+                         answer = answer * number_array[flash];
+                         // console.log(number_array[flash]);
+                         count++;
+                    } while (count < array_length);
+                    // console.log(answer);
+                    total = total + answer; // 125 + 0 
+                    count = 0;
+                    answer = 1;
+                    flash++;
+               } while (flash < array_length);
+               // console.log(total);
+               if (total == number) {
+                    console.log(number);
+                    print_count++;
+               }
+               number = parseInt(number) + 1
+               number = number.toString();
+          } while (print_count < 20);
+          // console.log(number);
+          // console.log("-----------------------------------------------------------");
+
+          // number_array = number.split('');
+          // console.log(number_array);
+          // array_length = number_array.length
+          // console.log(array_length);
+          // console.log("flash " + flash);
+          // flash = 0 ;
+          // do {
+          //      do {
+          //           answer = answer * number_array[flash];
+          //           console.log(number_array[flash]);
+          //           count++;
+          //      } while (count < array_length);
+          //      console.log(answer);
+          //      total = total + answer; // 125 + 0
+          //      count = 0;
+          //      answer = 1;
+          //      flash++;
+          // } while (flash < array_length);
+          // // console.log(total);
+          // if (total == number) {
+          //      console.log(number);
+          // }
+          // number = parseInt(number) + 1
+          // number = number.toString();
+          // console.log(number);
 
           // do {
           //      answer = answer * number_array[1];
