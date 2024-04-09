@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap demo</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+     <div class="container">
+          <div class="row">
+               <div class="col-8 offset-2 ">
+                    <div class="card mt-5 shadow ">
+                         <div class="card-header h2 text-bg-success">
+                              Basic Calc
+                         </div>
+                         <div class="card-body">
+                              <div class="form-group">
+                                   <label for="" class="form-label">
+                                        Enter number 1
+                                   </label>
+                                   <input type="number" class="form-control" name="number1" id="number1"
+                                        placeholder="Enter value of number 1 ">
+                              </div>
+                              <div class="form-group mt-3">
+                                   <label for="" class="form-label">
+                                        Enter number 2
+                                   </label>
+                                   <input type="number" class="form-control" name="number2" id="number2"
+                                        placeholder="Enter value of number 2">
+                              </div>
+                              <div class="text-center mt-3">
+                                   <button onclick="getAdd()" class="btn btn-success btn-lg">+</button>
+                                   <button class="btn btn-success btn-lg">-</button>
+                                   <button class="btn btn-success btn-lg">*</button>
+                                   <button class="btn btn-success btn-lg">/</button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="row mt-5">
+               <div class="col-6 offset-3">
+                    <div class="card shadow p-3">
+                         <h2 class="text-center">
+                              Answer for <span id="task"></span> :
+                              <br>
+                              <span id="answer">
+
+                              </span>
+                         </h2>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+     <script>
+
+          function getInput() {
+               var number1 = parseInt(document.getElementById("number1").value);
+               var number2 = parseInt(document.getElementById("number2").value);
+               console.log(`the value of number 1 is ${number1} and number 2 is ${number2}`);
+               var status = true;
+               if (isNaN(number1) || isNaN(number2)) {
+                    alert("Invalid Input ");
+                    status = false;
+               }
+               var output = [status, number1, number2]
+               return output;
+          }
+
+          function getAdd() {
+               console.log("Addition function called ");
+               var result = getInput();
+               console.log(result);
+               if (result[0] === true) {
+                    var answer = result[1] + result[2];
+               }
+               else {
+                    var answer = "Both Number should be valid ";
+               }
+               console.log("answer is " + answer);
+               document.getElementById("answer").innerHTML = answer ; 
+               document.getElementById("task").innerHTML = "Addition" ; 
+          }
+
+     </script>
+</body>
+
+</html>
