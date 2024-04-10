@@ -35,16 +35,16 @@
                               </div>
                               <div class="text-center mt-3">
                                    <button onclick="getAdd()" class="btn btn-success btn-lg">+</button>
-                                   <button class="btn btn-success btn-lg">-</button>
-                                   <button class="btn btn-success btn-lg">*</button>
-                                   <button class="btn btn-success btn-lg">/</button>
+                                   <button onclick="getSub()" class="btn btn-success btn-lg">-</button>
+                                   <button onclick="getMulti()" class="btn btn-success btn-lg">*</button>
+                                   <button onclick="getDiv()" class="btn btn-success btn-lg">/</button>
                               </div>
                          </div>
                     </div>
                </div>
           </div>
           <div class="row mt-5">
-               <div class="col-6 offset-3">
+               <div class="col-6 offset-3" id="output">
                     <div class="card shadow p-3">
                          <h2 class="text-center">
                               Answer for <span id="task"></span> :
@@ -70,10 +70,44 @@
                var status = true;
                if (isNaN(number1) || isNaN(number2)) {
                     alert("Invalid Input ");
+                    if (isNaN(number1)) {
+                         var number1_html = document.getElementById("number1")
+                         number1_html.classList.add('border');
+                         number1_html.classList.remove('border-dark-subtle');
+                         number1_html.classList.add('border-danger');
+                    }
+                    if (isNaN(number2)) {
+                         // alert("")
+                         var number2_html = document.getElementById("number2")
+                         number2_html.classList.add('border');
+                         number2_html.classList.remove('border-dark-subtle');
+                         number2_html.classList.add('border-danger');
+                    }
                     status = false;
+               }
+               else {
+                    var number1_html = document.getElementById("number1")
+                    number1_html.classList.add('border');
+                    number1_html.classList.add('border-dark-subtle');
+                    var number2_html = document.getElementById("number2")
+                    number2_html.classList.add('border');
+                    number2_html.classList.add('border-dark-subtle');
                }
                var output = [status, number1, number2]
                return output;
+          }
+
+          function displayOutput(color, task, answer) {
+               var card = `<div class="card shadow p-3 ${color}">
+                         <h2 class="text-center">
+                              Answer for <span id="task">${task}</span> :
+                              <br>
+                              <span id="answer">
+                                   ${answer}
+                              </span>
+                         </h2>
+                    </div>`;
+               document.getElementById("output").innerHTML = card;
           }
 
           function getAdd() {
@@ -82,13 +116,56 @@
                console.log(result);
                if (result[0] === true) {
                     var answer = result[1] + result[2];
+                    var color = "text-bg-success";
                }
                else {
                     var answer = "Both Number should be valid ";
+                    var color = "text-bg-danger";
                }
                console.log("answer is " + answer);
-               document.getElementById("answer").innerHTML = answer ; 
-               document.getElementById("task").innerHTML = "Addition" ; 
+               displayOutput(color, "Addition", answer);
+          }
+
+          function getSub() {
+               console.log("Subtraction function called ");
+               var result = getInput();
+               if (result[0] === true) {
+                    var answer = result[1] - result[2];
+                    var color = "text-bg-success";
+               }
+               else {
+                    var answer = "Both Number should be valid ";
+                    var color = "text-bg-danger";
+               }
+               displayOutput(color, "Subtraction", answer);
+          }
+
+          function getMulti() {
+               console.log("Mulitplication function called ");
+               var result = getInput();
+               if (result[0] === true) {
+                    var answer = result[1] * result[2];
+                    var color = "text-bg-success";
+               }
+               else {
+                    var answer = "Both Number should be valid ";
+                    var color = "text-bg-danger"
+               }
+               displayOutput(color, "Multiplication", answer);
+          }
+
+          function getDiv() {
+               console.log("Division function called ");
+               var result = getInput();
+               if (result[0] === true) {
+                    var answer = result[1] / result[2];
+                    var color = "text-bg-success";
+               }
+               else {
+                    var answer = "Both Number Should be valid ";
+                    var color = "text-bg-danger";
+               }
+               displayOutput(color, "Division", answer);
           }
 
      </script>
