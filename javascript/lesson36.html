@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+
+     <script>
+          // write a programe to findout area of cylinder 
+
+          var height = parseInt(prompt("Enter value of height "));
+          var base = parseInt(prompt("Enter value of base "));
+
+          function getCylinderArea(height, base, pi = 3.14159) {
+               console.log(`the value of height is ${height} base is ${base} and pi is ${pi}`);
+               let answer = (2 * pi * base * height) + (2 * pi * (base * base))
+               console.log(answer);
+          }
+
+          getCylinderArea(height, base, 3.14)
+          getCylinderArea(height, base)
+     </script>
+</body>
+
+</html>

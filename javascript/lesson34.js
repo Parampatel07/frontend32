@@ -1,13 +1,13 @@
 // function expression ( 2nd method )
 // footToMeter();
 
-var getInput = function () {
-     var foot = parseInt(document.getElementById('foot').value);
-     var inch = parseInt(document.getElementById('inch').value);
-     var weight = parseFloat(document.getElementById('weight').value);
-     var answer = [foot, inch, weight]
+let getInput = function () {
+     let foot = parseInt(document.getElementById('foot').value);
+     let inch = parseInt(document.getElementById('inch').value);
+     let weight = parseFloat(document.getElementById('weight').value);
+     let answer = [foot, inch, weight]
      console.log(` the value of foot is ${foot} inch is ${inch} and weight is ${weight} `);
-     // var meter = foot / 3.281 ;
+     // let meter = foot / 3.281 ;
      // footToMeter(foot);
      // inchToMeter(inch);
      // getTotalMeter(foot, inch);
@@ -15,28 +15,28 @@ var getInput = function () {
      return answer;
 }
 
-var getBmi = function () {
-     var input = getInput();
-     var bmi = input[2] / (getTotalMeter(input[0], input[1]) * getTotalMeter(input[0], input[1]));
+let getBmi = function () {
+     let input = getInput();
+     let bmi = input[2] / (getTotalMeter(input[0], input[1]) * getTotalMeter(input[0], input[1]));
      console.log("the value of bmi is " + bmi);
      return bmi;
 }
 
-var getTotalMeter = function (foot, inch) {
-     var total_meter = footToMeter(foot) + inchToMeter(inch);
+let getTotalMeter = function (foot, inch) {
+     let total_meter = footToMeter(foot) + inchToMeter(inch);
      console.log("Total meter is : " + total_meter);
      return total_meter;
 }
 
-var footToMeter = function (foot) {
-     var foot_meter = foot / 3.281;
+let footToMeter = function (foot) {
+     let foot_meter = foot / 3.281;
      console.log("This is foot meter " + foot_meter);
      return foot_meter;
 }
 
 
-var inchToMeter = function (inch) {
-     var inch_meter = inch / 39.37;
+let inchToMeter = function (inch) {
+     let inch_meter = inch / 39.37;
      console.log("This is inch meter " + inch_meter);
      return inch_meter;
 }
