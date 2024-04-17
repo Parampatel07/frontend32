@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          p {
+               font-size: 1.5rem;
+               background-color: rgb(248, 195, 195);
+               padding: 30px;
+               margin: 30px;
+               border-radius: 20px;
+          }
+
+          #mybutton {
+               font-size: 1rem;
+               background-color: rgb(248, 195, 195);
+               padding: 10px;
+               margin: 20px;
+               margin-left: 40px;
+               border-radius: 15px;
+          }
+     </style>
+</head>
+
+<body>
+     <h1 align="center">
+          Example of AddEventListner and RemoveEventListner
+     </h1>
+     <hr>
+     <p id="my_p">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sint tempore iusto eveniet possimus,
+          aliquam praesentium explicabo repudiandae voluptatem sunt rerum labore recusandae illum! Impedit ducimus eius
+          rerum cupiditate magnam.
+     </p>
+     <button id="mybutton">Remove Event</button>
+     <script>
+          let my_p = document.querySelector("#my_p");
+          let myButton = document.querySelector("#mybutton");
+          function pClick() {
+               console.log("Add Event Listner Called ");
+               // window.location.hDref = "lesson40.html"
+          }
+          my_p.addEventListener("click", pClick);
+          myButton.addEventListener("click", function () {
+               console.log("add event listner called  ");
+               my_p.removeEventListener("click", pClick);
+          });
+     </script>
+</body>
+
+</html>

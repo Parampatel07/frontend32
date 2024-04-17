@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          #mybutton {
+               font-size: 1.2rem;
+               background-color: rgb(69, 69, 236);
+               color: white;
+               padding: 10px;
+               border-radius: 30px;
+          }
+     </style>
+</head>
+
+<body>
+
+     <h1 align="center">
+          Example of Event 2nd method (0 level Event )
+     </h1>
+     <hr>
+     <button id="mybutton">Demo Button</button>
+     <script>
+
+          let button = document.querySelector("#mybutton");
+          button.onclick = function () {
+               console.log("Button Clicked ");
+               button.onclick = null;
+          };
+     </script>
+</body>
+
+</html>
